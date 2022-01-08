@@ -116,10 +116,18 @@ Aqui não há muito o que explanar, vou apenas destacar a **definição de fonte
 ...
 ```
 
-e a **ocultação dos textos padrões** do powershell, que pode ser feito passando o parametro `-nologo` no comando de execução dele. Você pode fazer isso no profile do powershell definido no [settings.json](https://github.com/danielarrais/my-powershell-confs/blob/main/Windows-Terminal/settings.json "settings.json"), através da propriedade `comandLine`, onde é possível definir o comando de execução do powershell. No nosso arquivo ficou assim:
+e a **ocultação do texto de inicialização** (destacado em verde) do powershell:
+
+![image](https://user-images.githubusercontent.com/28496479/148645687-bd017378-1056-4ff0-9d9a-054b6d857b4f.png)
+
+que pode ser feito passando o parametro `-nologo` no comando de execução dele. Você pode fazer isso no profile do powershell definido no [settings.json](https://github.com/danielarrais/my-powershell-confs/blob/main/Windows-Terminal/settings.json "settings.json"), através da propriedade `comandLine`, onde é possível definir o comando de execução do powershell. No nosso arquivo ficou assim:
 
 ```json
 ...
 "commandline":  "C:\\Program Files\\PowerShell\\7\\pwsh.exe -nologo",
 ...
 ```
+
+# Resultado final
+
+![image](https://user-images.githubusercontent.com/28496479/148645728-b184a1c2-ced9-41ef-a0b0-2cc75cdaa8dd.png)
