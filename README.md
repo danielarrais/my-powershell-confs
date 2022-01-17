@@ -103,6 +103,9 @@ Com o módulo PSReadline podemos adicionar autocomplete no powershell com base n
 ```bash
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView # ou InlineView
+
+Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 ```
 
 # Configurações do windows terminal
